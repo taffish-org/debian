@@ -1,0 +1,9 @@
++TOOL:debian
+ARGS
+    <else>
+        cat ::*LOAD-DIR*::../debian.info.txt
+    <main>
+        ::cmd:: ::in::
+RUN
+    <container:taf-debian-v12:ghcr.io/taffish-org/debian:12>
+        ::*MAIN*::
